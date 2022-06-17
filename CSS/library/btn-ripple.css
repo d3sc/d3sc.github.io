@@ -1,0 +1,69 @@
+.btn-visit {
+  display: inline-block;
+  position: relative;
+  font-size: 0.9rem;
+  padding: 1em 2.8em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: hsl(200, 100%, 65%);
+  /* Current color mengikuti warna dari property color / warna yang ada pada item yang diwarnai */
+  border: 2px solid currentColor;
+  border-radius: 0.125em;
+  cursor: pointer;
+  overflow: hidden;
+  transition: opacity 0.1s ease-out;
+  z-index: 1;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.btn-visit::before {
+  content: "";
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%, -50%) scale(0);
+  aspect-ratio: 1/1;
+  z-index: -1;
+  background-color: #555;
+  width: 100%;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.btn-visit:hover {
+  opacity: 0.8;
+}
+
+/* .btn-visit:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0.4;
+} */
+
+/* jika ingin mengaktifkan animasi pada saat button di klik ubah eventlistener menjadi click yang ada di script.js */
+.pulse::before {
+  animation: pulse 0.5s ease;
+}
+
+@keyframes pulse {
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .btn-visit {
+    width: auto;
+    font-size: 0.6rem;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .btn-visit {
+    font-size: 0.8em;
+    padding: 12px 20px;
+    width: 120px;
+  }
+}
