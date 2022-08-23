@@ -1,240 +1,303 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Specifies the name of the web application that page is represents. -->
-    <meta name="application-name" content="Descx-Profile" />
-    <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (android) -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <!-- Set color for status bar and address bar in meta tag (android) -->
-    <meta name="theme-color" content="#050505" />
-    <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (IOS) -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <!-- Set color for status bar and address bar in meta tag (IOS) -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#050505" />
-    <!-- Set the author of the page -->
-    <meta name="author" content="Descx" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="og:type" content="profile" />
-    <meta name="og:title" content="Descx - Profile Web Page" />
-    <meta name="og:locale" content="en_US" />
-    <meta name="og:site_name" content="Profile-Page" />
-    <!-- Define name of overall website content -->
-    <meta name="og:url" content="https://descx-profile/" />
-    <!-- Define the url of the content -->
-    <link rel="icon" href="../img/profile.png" type="image/png" />
-    <!-- Set favicons of the page -->
-    <title>Profile-Page Project</title>
+ <head>
+  <meta charset="UTF-8" />
+  <!-- Specifies the name of the web application that page is represents. -->
+  <meta name="application-name" content="Descx-Profile" />
+  <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (android) -->
+  <meta name="mobile-web-app-capable" content="yes" />
+  <!-- Set color for status bar and address bar in meta tag (android) -->
+  <meta name="theme-color" content="#050505" />
+  <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (IOS) -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- Set color for status bar and address bar in meta tag (IOS) -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#050505" />
+  <!-- Set the author of the page -->
+  <meta name="author" content="Descx" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="og:type" content="profile" />
+  <meta name="og:title" content="Descx - Profile Web Page" />
+  <meta name="og:locale" content="en_US" />
+  <meta name="og:site_name" content="Profile-Page" />
+  <!-- Define name of overall website content -->
+  <meta name="og:url" content="https://descx-profile/" />
+  <!-- Define the url of the content -->
+  <link rel="icon" href="../img/profile.png" type="image/png" />
+  <!-- Set favicons of the page -->
+  <title>Profile-Page Project</title>
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="../CSS/library/nav.css" />
-    <link rel="stylesheet" href="../CSS/project.css" />
-    <link rel="stylesheet" href="../CSS/library/config.css" />
-    <link rel="stylesheet" href="../CSS/library/btn-ripple.css" />
-    <link rel="stylesheet" href="../CSS/library/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../CSS/library/footer.css" />
-    <!-- My Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,600&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet" />
-    <!-- My Icon (Boxicons CSS) -->
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <!-- My CSS -->
+  <link rel="stylesheet" href="../CSS/library/nav.css" />
+  <link rel="stylesheet" href="../CSS/project.css" />
+  <link rel="stylesheet" href="../CSS/library/config.css" />
+  <link rel="stylesheet" href="../CSS/library/btn-ripple.css" />
+  <link rel="stylesheet" href="../CSS/library/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../CSS/library/footer.css" />
+  <!-- My Font -->
+  <link
+   href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,600&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,300;0,500;1,300&display=swap"
+   rel="stylesheet"
+  />
+  <!-- My Icon (Boxicons CSS) -->
+  <link
+   href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+   rel="stylesheet"
+  />
 
-    <!-- my Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body class="dark">
-    <section class="nav-header">
-      <nav class="menu">
-        <div class="menu-toggle">
-          <input type="checkbox" class="input-btn" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <ul class="menu-list">
-          <li>
-            <a href="../index.html"
-              ><button class="btn-nav"><span>Home</span></button></a
-            >
-          </li>
-          <li>
-            <a href="../about/about.html"
-              ><button class="btn-nav"><span>About</span></button></a
-            >
-          </li>
-          <li>
-            <a href="project.html"
-              ><button class="btn-nav"><span>Project</span></button></a
-            >
-          </li>
-          <li>
-            <a href="../contact/contact.html"
-              ><button class="btn-nav"><span>Contact</span></button></a
-            >
-          </li>
-        </ul>
-      </nav>
-      <h1>Project</h1>
-    </section>
-
-    <!-- end of navbar -->
-    <!-- project -->
-    <section class="project">
-      <h1>My Project</h1>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, dolores!</p>
-
-      <div class="row justify-content-evenly">
-        <div class="project-col">
-          <img src="../img/projects/deface.png" alt="library" />
-          <h3>Defacer Web</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, cumque.</p>
-        </div>
-        <div class="project-col">
-          <img src="../img/projects/project1.png" alt="library" />
-          <h3>Make A Web Page</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, cumque.</p>
-        </div>
-        <div class="project-col">
-          <img src="../img/projects/project3.png" alt="library" />
-          <h3>Make code of HTML, CSS, and JS</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, cumque.</p>
-        </div>
-        <div class="project-col">
-          <img src="../img/projects/weatherApi.png" alt="library" />
-          <h3>Create An API</h3>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, cumque.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- End Project -->
-
-    <!-- Real Project -->
-
-    <div class="slide-container swiper">
-      <div class="info-real">
-        <h1>Real-Project</h1>
-        <p>This Project can be Open</p>
-      </div>
-      <div class="slide-content">
-        <div class="card-wrapper swiper-wrapper">
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <img src="../img/projects/School-page.png" class="overlay" />
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">School Web Page</h2>
-
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?</p>
-
-              <a href="http://schl.smkletris2pamulang.sch.id/index.html" target="_blank"><button class="btn-visit">View Web</button></a>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <img src="../img/projects/parallax.png" class="overlay" />
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Parallax Web</h2>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?</p>
-
-              <a href="https://d3sc.github.io/parallax-scrolling/" target="_blank"><button class="btn-visit">View Web</button></a>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <img src="../img/projects/suit-djawa.png" class="overlay" />
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Suit Djawa Game!</h2>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?</p>
-
-              <a href="https://suit-djawa.netlify.app/" target="_blank"><button class="btn-visit">View Web</button></a>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <img src="../img/projects/todo-list.png" class="overlay" />
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Todo List Daily</h2>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?</p>
-
-              <a href="https://todo-list-daily2.netlify.app/" target="_blank"><button class="btn-visit">View Web</button></a>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <img src="../img/projects/craccken-page.png" class="overlay" />
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Craccken Landing Page</h2>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?</p>
-
-              <a href="https://craccken.github.io/" target="_blank"><button class="btn-visit">View Web</button></a>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <img src="../img/projects/contact-form.png" class="overlay" />
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Active Contact Form</h2>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?</p>
-
-              <a href="https://d3sc.github.io/contact-form/" target="_blank"><button class="btn-visit">View Web</button></a>
-            </div>
-          </div>
-          <div class="card swiper-slide">
-            <div class="image-content">
-              <img src="../img/projects/wedding-page.png" class="overlay" />
-            </div>
-
-            <div class="card-content">
-              <h2 class="name">Wedding Landing Page</h2>
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?</p>
-
-              <a href="https://acara-pernikahan.netlify.app/" target="_blank"><button class="btn-visit">View Web</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper-button-next swiper-navBtn"></div>
-      <div class="swiper-button-prev swiper-navBtn"></div>
-      <div class="swiper-pagination"></div>
+  <!-- my Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+ </head>
+ <body class="dark">
+  <section class="nav-header">
+   <nav class="menu">
+    <div class="menu-toggle">
+     <input type="checkbox" class="input-btn" />
+     <span></span>
+     <span></span>
+     <span></span>
     </div>
+    <ul class="menu-list">
+     <li>
+      <a href="../index.html"
+       ><button class="btn-nav"><span>Home</span></button></a
+      >
+     </li>
+     <li>
+      <a href="../about/about.html"
+       ><button class="btn-nav"><span>About</span></button></a
+      >
+     </li>
+     <li>
+      <a href="project.html"
+       ><button class="btn-nav"><span>Project</span></button></a
+      >
+     </li>
+     <li>
+      <a href="../contact/contact.html"
+       ><button class="btn-nav"><span>Contact</span></button></a
+      >
+     </li>
+    </ul>
+   </nav>
+   <h1>Project</h1>
+  </section>
 
-    <!-- end of real Project -->
+  <!-- end of navbar -->
+  <!-- project -->
+  <section class="project">
+   <h1>My Project</h1>
+   <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore, dolores!
+   </p>
 
-    <!-- footer -->
-    <footer>
-      <h4>About me</h4>
-      <p class="footer-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam quasi dignissimos maxime <br /></p>
-      <hr />
-      <div class="footer-bottom">
-        <p class="footer-info-1"><i class="bx bx-copyright"></i> All Rights Reserved 2022.</p>
-        <p class="footer-info-2">Designed by <span>D3sc</span></p>
+   <div class="row justify-content-evenly">
+    <div class="project-col">
+     <img src="../img/projects/deface.png" alt="library" />
+     <h3>Defacer Web</h3>
+     <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique,
+      cumque.
+     </p>
+    </div>
+    <div class="project-col">
+     <img src="../img/projects/project1.png" alt="library" />
+     <h3>Make A Web Page</h3>
+     <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique,
+      cumque.
+     </p>
+    </div>
+    <div class="project-col">
+     <img src="../img/projects/project3.png" alt="library" />
+     <h3>Make code of HTML, CSS, and JS</h3>
+     <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique,
+      cumque.
+     </p>
+    </div>
+    <div class="project-col">
+     <img src="../img/projects/weatherApi.png" alt="library" />
+     <h3>Create An API</h3>
+     <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique,
+      cumque.
+     </p>
+    </div>
+    <div class="project-col">
+     <img src="../img/projects/tampilan-web.png" alt="library" />
+     <h3>Create CRUD App</h3>
+     <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique,
+      cumque.
+     </p>
+    </div>
+   </div>
+  </section>
+
+  <!-- End Project -->
+
+  <!-- Real Project -->
+
+  <div class="slide-container swiper">
+   <div class="info-real">
+    <h1>Real-Project</h1>
+    <p>This Project can be Open</p>
+   </div>
+   <div class="slide-content">
+    <div class="card-wrapper swiper-wrapper">
+     <div class="card swiper-slide">
+      <div class="image-content">
+       <img src="../img/projects/School-page.png" class="overlay" />
       </div>
-    </footer>
 
-    <script src="../JS/library/swiper-bundle.min.js"></script>
-    <script src="../JS/library/swiper.js"></script>
+      <div class="card-content">
+       <h2 class="name">School Web Page</h2>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-      });
-    </script>
+       <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?
+       </p>
 
-    <script src="../JS/script.js"></script>
-  </body>
+       <a
+        href="http://schl.smkletris2pamulang.sch.id/index.html"
+        target="_blank"
+        ><button class="btn-visit">View Web</button></a
+       >
+      </div>
+     </div>
+     <div class="card swiper-slide">
+      <div class="image-content">
+       <img src="../img/projects/parallax.png" class="overlay" />
+      </div>
+
+      <div class="card-content">
+       <h2 class="name">Parallax Web</h2>
+       <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?
+       </p>
+
+       <a href="https://d3sc.github.io/parallax-scrolling/" target="_blank"
+        ><button class="btn-visit">View Web</button></a
+       >
+      </div>
+     </div>
+     <div class="card swiper-slide">
+      <div class="image-content">
+       <img src="../img/projects/suit-djawa.png" class="overlay" />
+      </div>
+
+      <div class="card-content">
+       <h2 class="name">Suit Djawa Game!</h2>
+       <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?
+       </p>
+
+       <a href="https://suit-djawa.netlify.app/" target="_blank"
+        ><button class="btn-visit">View Web</button></a
+       >
+      </div>
+     </div>
+     <div class="card swiper-slide">
+      <div class="image-content">
+       <img src="../img/projects/todo-list.png" class="overlay" />
+      </div>
+
+      <div class="card-content">
+       <h2 class="name">Todo List Daily</h2>
+       <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?
+       </p>
+
+       <a href="https://todo-list-daily2.netlify.app/" target="_blank"
+        ><button class="btn-visit">View Web</button></a
+       >
+      </div>
+     </div>
+     <div class="card swiper-slide">
+      <div class="image-content">
+       <img src="../img/projects/craccken-page.png" class="overlay" />
+      </div>
+
+      <div class="card-content">
+       <h2 class="name">Craccken Landing Page</h2>
+       <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?
+       </p>
+
+       <a href="https://craccken.github.io/" target="_blank"
+        ><button class="btn-visit">View Web</button></a
+       >
+      </div>
+     </div>
+     <div class="card swiper-slide">
+      <div class="image-content">
+       <img src="../img/projects/contact-form.png" class="overlay" />
+      </div>
+
+      <div class="card-content">
+       <h2 class="name">Active Contact Form</h2>
+       <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?
+       </p>
+
+       <a href="https://d3sc.github.io/contact-form/" target="_blank"
+        ><button class="btn-visit">View Web</button></a
+       >
+      </div>
+     </div>
+     <div class="card swiper-slide">
+      <div class="image-content">
+       <img src="../img/projects/simple-pvp.png" class="overlay" />
+      </div>
+
+      <div class="card-content">
+       <h2 class="name">Simple PVP</h2>
+       <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quos?
+       </p>
+
+       <a href="https://pvp-simple-game.netlify.app/" target="_blank"
+        ><button class="btn-visit">View Web</button></a
+       >
+      </div>
+     </div>
+    </div>
+   </div>
+
+   <div class="swiper-button-next swiper-navBtn"></div>
+   <div class="swiper-button-prev swiper-navBtn"></div>
+   <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- end of real Project -->
+
+  <!-- footer -->
+  <footer>
+   <h4>About me</h4>
+   <p class="footer-content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam
+    quasi dignissimos maxime <br />
+   </p>
+   <hr />
+   <div class="footer-bottom">
+    <p class="footer-info-1">
+     <i class="bx bx-copyright"></i> All Rights Reserved 2022.
+    </p>
+    <p class="footer-info-2">Designed by <span>D3sc</span></p>
+   </div>
+  </footer>
+
+  <script src="../JS/library/swiper-bundle.min.js"></script>
+  <script src="../JS/library/swiper.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   AOS.init({
+    once: true,
+   });
+  </script>
+
+  <script src="../JS/script.js"></script>
+ </body>
 </html>
