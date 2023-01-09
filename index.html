@@ -1,221 +1,305 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- Specifies the name of the web application that page is represents. -->
-    <meta name="application-name" content="Descx-Profile" />
-    <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (android) -->
-    <meta name="mobile-web-app-capable" content="yes" />
-    <!-- Set color for status bar and address bar in meta tag (android) -->
-    <meta name="theme-color" content="#050505" />
-    <!-- Set up website to have an application shortcut icon added to a device homescreen and the app launch in full-screen "app-mode" (IOS) -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <!-- Set color for status bar and address bar in meta tag (IOS) -->
-    <meta name="apple-mobile-web-app-status-bar-style" content="#050505" />
-    <!-- Set the author of the page -->
-    <meta name="author" content="Descx" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="og:type" content="profile" />
-    <meta name="og:title" content="Descx - Profile Web Page" />
-    <meta name="og:locale" content="en_US" />
-    <meta name="og:site_name" content="Profile-Page" />
-    <!-- Define name of overall website content -->
-    <meta name="og:url" content="https://descx-profile/" />
-    <!-- Define the url of the content -->
-    <link rel="icon" href="img/profile.png" type="image/png" />
-    <!-- Set favicons of the page -->
-    <title>Profile-Page Home</title>
-    <!-- My Css -->
-    <link rel="stylesheet" href="CSS/library/nav.css" />
-    <link rel="stylesheet" href="CSS/home.css" />
-    <link rel="stylesheet" href="CSS/library/config.css" />
-    <link rel="stylesheet" href="CSS/library/btn-ripple.css" />
-    <link rel="stylesheet" href="CSS/library/footer.css" />
-    <link rel="stylesheet" href="CSS/library/swiper.css" />
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="application-name" content="Descx-Profile" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#050505" />
+  <meta name="author" content="Descx" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="og:type" content="profile" />
+  <meta name="og:title" content="Descx - Profile Web Page" />
+  <meta name="og:locale" content="en_US" />
+  <meta name="og:site_name" content="Profile-Page" />
+  <meta name="og:url" content="https://descx-profile/" />
+  <link
+   rel="icon"
+   href="img/profile.png"
+   type="image/png"
+   style="border-radius: 50%"
+  />
+  <title>Profile-Page Home</title>
+  <!-- My Css -->
+  <link rel="stylesheet" href="CSS/library/nav.css" />
+  <link rel="stylesheet" href="CSS/home.css" />
+  <link rel="stylesheet" href="CSS/library/config.css" />
+  <link rel="stylesheet" href="CSS/library/btn-ripple.css" />
+  <link rel="stylesheet" href="CSS/library/footer.css" />
+  <link rel="stylesheet" href="CSS/library/swiper.css" />
 
-    <!-- My Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,600&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,300;0,500;1,300&display=swap" rel="stylesheet" />
+  <!-- My Font -->
+  <link
+   href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,600&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,300;0,500;1,300&display=swap"
+   rel="stylesheet"
+  />
 
-    <!-- My Icon (Boxicons CSS) -->
-    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+  <!-- My Icon (Boxicons CSS) -->
+  <link
+   href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+   rel="stylesheet"
+  />
 
-    <!-- My Swiper on https://swiperjs.com/get-started in CDN-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <!-- My Swiper on https://swiperjs.com/get-started in CDN-->
+  <link
+   rel="stylesheet"
+   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
 
-    <!-- my Animation -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
-  <body class="dark">
-    <section class="home">
-      <nav class="menu">
-        <div class="menu-toggle">
-          <input type="checkbox" class="input-btn" />
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <ul class="menu-list">
-          <li>
-            <a href="index.html"
-              ><button class="btn-nav"><span>Home</span></button></a
-            >
-          </li>
-          <li>
-            <a href="about/about.html"
-              ><button class="btn-nav"><span>About</span></button></a
-            >
-          </li>
-          <li>
-            <a href="project/project.html"
-              ><button class="btn-nav"><span>Project</span></button></a
-            >
-          </li>
-          <li>
-            <a href="contact/contact.html"
-              ><button class="btn-nav"><span>Contact</span></button></a
-            >
-          </li>
+  <!-- my Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+ </head>
+ <body class="dark">
+  <section class="home">
+   <nav class="menu">
+    <div class="menu-toggle">
+     <input type="checkbox" class="input-btn" />
+     <span></span>
+     <span></span>
+     <span></span>
+    </div>
+    <ul class="menu-list">
+     <li>
+      <a href="index.html"
+       ><button class="btn-nav"><span>Home</span></button></a
+      >
+     </li>
+     <li>
+      <a href="routes/about.html"
+       ><button class="btn-nav"><span>About</span></button></a
+      >
+     </li>
+     <li>
+      <a href="routes/project.html"
+       ><button class="btn-nav"><span>Project</span></button></a
+      >
+     </li>
+     <li>
+      <a href="routes/contact.html"
+       ><button class="btn-nav"><span>Contact</span></button></a
+      >
+     </li>
+    </ul>
+   </nav>
+   <div class="logo">
+    <a href="routes/about.html">D3sc</a>
+   </div>
+   <div class="visit-more">
+    <h3 id="visit-header">
+     Hello,<br />
+     I am a <span id="typing-text"></span>
+    </h3>
+    <p id="visit-text">Want to know more about me?</p>
+    <br />
+    <a href="#B1"
+     ><button class="btn-visit" id="main-btn" onclick="visit();">
+      Visit More
+     </button></a
+    >
+   </div>
+  </section>
+
+  <!-- card -->
+  <section class="info main-info">
+   <div class="main-page">
+    <div class="text-box">
+     <div class="inform">
+      <div class="info-text-content" id="B1">
+       <div class="user">
+        <a href="routes/contact.html"><p>Descx</p></a>
+       </div>
+       <div class="title-user">
+        <ul>
+         <li>
+          <a href="#what"><p>Programmer |</p></a>
+         </li>
+         <li>
+          <a href="#what"><p>Web Dev |</p></a>
+         </li>
+         <li>
+          <a href="#what"><p>Web Designer</p></a>
+         </li>
         </ul>
-      </nav>
-      <div class="logo">
-        <a href="about/about.html">D3sc</a>
+       </div>
       </div>
-      <div class="visit-more">
-        <h3 id="visit-header">
-          Hello,<br />
-          I am a <span id="typing-text"></span>
-        </h3>
-        <p id="visit-text">Want to know more about me?</p>
-        <br />
-        <a href="#B1"><button class="btn-visit" id="main-btn" onclick="visit();">Visit More</button></a>
-      </div>
-    </section>
-
-    <!-- card -->
-    <section class="info main-info">
-      <div class="main-page">
-        <div class="text-box">
-          <div class="inform">
-            <div class="info-text-content" id="B1">
-              <div class="user">
-                <a href="contact/contact.html"><p>Descx</p></a>
-              </div>
-              <div class="title-user">
-                <!-- <p class="explain2">Programmer | Web Dev | Web Designer</p> -->
-                <ul>
-                  <li>
-                    <a href="#what"><p>Programmer |</p></a>
-                  </li>
-                  <li>
-                    <a href="#what"><p>Web Dev |</p></a>
-                  </li>
-                  <li>
-                    <a href="#what"><p>Web Designer</p></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="info-content">
-              <div class="added-swiper">
-                <!-- Slider main container -->
-                <div class="swiper">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="img/projects/School-page.png" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/projects/parallax.png" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/projects/navbar2.png" alt="" /></div>
-                    <div class="swiper-slide"><img src="img/projects/contact-form.png" alt="" /></div>
-                  </div>
-                  <!-- If we need pagination -->
-                  <div class="swiper-pagination"></div>
-                </div>
-              </div>
-              <div class="explanation-content">
-                <p>See more of my projects</p>
-                <h3>What's New?</h3>
-                <br />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolore sequi esse aliquid dolores ex totam corporis dicta tempora eum.</p>
-                <br />
-                <a href="about/about.html"><button class="btn-visit" id="main-btn">About Me</button></a>
-              </div>
-            </div>
+      <div class="info-content">
+       <div class="added-swiper">
+        <!-- Slider main container -->
+        <div class="swiper">
+         <!-- Additional required wrapper -->
+         <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+           <img src="img/projects/craccken-new.png" alt="" />
           </div>
+          <div class="swiper-slide">
+           <img src="img/projects/parallax.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+           <img src="img/projects/navbar2.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+           <img src="img/projects/School-page.png" alt="" />
+          </div>
+         </div>
+         <!-- If we need pagination -->
+         <div class="swiper-pagination"></div>
         </div>
+       </div>
+       <div class="explanation-content">
+        <p>See more of my projects</p>
+        <h3>What's New?</h3>
+        <br />
+        <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolore
+         sequi esse aliquid dolores ex totam corporis dicta tempora eum.
+        </p>
+        <br />
+        <a href="routes/about.html"
+         ><button class="btn-visit" id="main-btn">About Me</button></a
+        >
+       </div>
       </div>
-      <h1 id="what">What is?</h1>
-      <div class="row">
-        <div class="info-col info-col-first">
-          <h3>Programmer</h3>
-          <p>A programmer is someone who has the ability or skill to write and design computer program code (syntax) using computer programming languages ​​(Java, PHP, Javascript, etc.).</p>
-        </div>
-        <div class="info-col">
-          <h3>Web Dev</h3>
-          <p>A web developer is a programmer who creates programs and applications for the world wide web.</p>
-        </div>
-        <div class="info-col">
-          <h3>Web Designer</h3>
-          <p>People who do web design activities are known as web designers. In general the web designer is an IT professional who is responsible for designing the layout, visual appearance and usability of the website.</p>
-        </div>
-      </div>
-    </section>
+     </div>
+    </div>
+   </div>
+   <h1 id="what">What is?</h1>
+   <div class="row">
+    <div class="info-col info-col-first">
+     <h3>Programmer</h3>
+     <p>
+      A programmer is someone who has the ability or skill to write and design
+      computer program code (syntax) using computer programming languages
+      ​​(Java, PHP, Javascript, etc.).
+     </p>
+    </div>
+    <div class="info-col">
+     <h3>Web Dev</h3>
+     <p>
+      A web developer is a programmer who creates programs and applications for
+      the world wide web.
+     </p>
+    </div>
+    <div class="info-col">
+     <h3>Web Designer</h3>
+     <p>
+      People who do web design activities are known as web designers. In general
+      the web designer is an IT professional who is responsible for designing
+      the layout, visual appearance and usability of the website.
+     </p>
+    </div>
+   </div>
+  </section>
 
-    <!-- footer -->
-    <footer class="main-footer">
-      <h4>About me</h4>
-      <p class="footer-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam quasi dignissimos maxime <br /></p>
-      <hr />
-      <div class="footer-bottom">
-        <p class="footer-info-1"><i class="bx bx-copyright"></i> All Rights Reserved 2022.</p>
-        <p class="footer-info-2">Designed by <span>D3sc</span></p>
-      </div>
-    </footer>
+  <!-- Certificate -->
 
-    <!-- CDN typed.js on github-->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <div class="content">
+   <div class="certificate">
+    <h2>Certificate</h2>
+   </div>
+   <div class="cards">
+    <div class="card">
+     <img src="img/certificate/certificate1.png" alt="" />
+     <div class="info-certificate">
+      <h3>Javascript Basic</h3>
+      <br />
+      <p>
+       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+       consequatur perferendis corporis corrupti necessitatibus quod!
+      </p>
+      <br />
+      <a
+       href="data/sertifikat_course_256_2280113_011022190838.pdf"
+       download
+       target="_blank"
+      >
+       <button class="btn-visit download">Download pdf</button>
+      </a>
+     </div>
+    </div>
+    <div class="card">
+     <img src="img/certificate/certificate2.png" alt="" />
+     <div class="info-certificate">
+      <h3>Back-end Beginner</h3>
+      <br />
+      <p>
+       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
+       repudiandae deleniti ipsa hic. Aspernatur, maiores rerum.
+      </p>
+      <br />
+      <a
+       href="data/sertifikat_course_261_2280113_281222224413.pdf"
+       download
+       target="_blank"
+      >
+       <button class="btn-visit download">Download pdf</button>
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
 
-    <!-- JS Swiper On https://swiperjs.com/get-started in CDN -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <!-- end of Certificate -->
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        once: true,
-      });
+  <!-- footer -->
+  <footer class="main-footer">
+   <h4>About me</h4>
+   <p class="footer-content">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam
+    quasi dignissimos maxime <br />
+   </p>
+   <hr />
+   <div class="footer-bottom">
+    <p class="footer-info-1">
+     <i class="bx bx-copyright"></i> All Rights Reserved 2022.
+    </p>
+    <p class="footer-info-2">Designed by <span>D3sc</span></p>
+   </div>
+  </footer>
 
-      var typed = new Typed("#typing-text", {
-        strings: ["Web Developer", "Programmer", "Web Designer"],
-        startDelay: 1000,
-        typeSpeed: 100,
-        backSpeed: 80,
-        backDelay: 1000,
-        loop: true,
-        //   fadeOut: true,
-        fadeOutDelay: 500,
-        //   showCursor: false,
-        // cursorChar: "?",
-        stringsElement: null,
-      });
+  <!-- CDN typed.js on github-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-      const info = document.querySelector(".main-info");
-      const footer = document.querySelector(".main-footer");
-      function visit(a) {
-        info.style.display = "block";
-        footer.style.display = "block";
-        // SessionStorage memiliki jangka waktu tidak seperti localStorage.
-        // kalau ingin diganti, ganti aja ngak ngaruh cmn jangka waktu doang.
-        sessionStorage.setItem("open", "halo");
-      }
+  <!-- JS Swiper On https://swiperjs.com/get-started in CDN -->
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-      if (sessionStorage.getItem("open") == "halo") {
-        info.style.display = "block";
-        footer.style.display = "block";
-      }
-      // console.log(localStorage.getItem("open"));
-    </script>
-    <script src="JS/script.js"></script>
-    <script src="JS/library/swiper2.js"></script>
-  </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   AOS.init({
+    once: true,
+   });
+
+   var typed = new Typed("#typing-text", {
+    strings: ["Web Developer", "Programmer", "Web Designer"],
+    startDelay: 1000,
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 1000,
+    loop: true,
+    fadeOutDelay: 500,
+    stringsElement: null,
+   });
+
+   const info = document.querySelector(".main-info");
+   const footer = document.querySelector(".main-footer");
+   function visit(a) {
+    info.style.display = "block";
+    footer.style.display = "block";
+    // SessionStorage memiliki jangka waktu tidak seperti localStorage.
+    // kalau ingin diganti, ganti aja ngak ngaruh cmn jangka waktu doang.
+    sessionStorage.setItem("open", "halo");
+   }
+
+   if (sessionStorage.getItem("open") == "halo") {
+    info.style.display = "block";
+    footer.style.display = "block";
+   }
+   // console.log(localStorage.getItem("open"));
+  </script>
+  <script src="JS/script.js"></script>
+  <script src="JS/library/swiper2.js"></script>
+ </body>
 </html>
