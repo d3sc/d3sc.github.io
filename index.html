@@ -30,7 +30,7 @@
   <link rel="stylesheet" href="CSS/library/btn-ripple.css" />
   <link rel="stylesheet" href="CSS/library/footer.css" />
   <link rel="stylesheet" href="CSS/library/swiper.css" />
-
+  <link rel="stylesheet" href="CSS/library/load.css" />
   <!-- My Font -->
   <link
    href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,600&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,300;0,500;1,300&display=swap"
@@ -133,16 +133,16 @@
          <div class="swiper-wrapper">
           <!-- Slides -->
           <div class="swiper-slide">
-           <img src="img/projects/craccken-new.png" alt="" />
+           <img src="img/projects/craccken-new.png" alt="" loading="lazy" />
           </div>
           <div class="swiper-slide">
-           <img src="img/projects/parallax.png" alt="" />
+           <img src="img/projects/parallax.png" alt="" loading="lazy" />
           </div>
           <div class="swiper-slide">
-           <img src="img/projects/navbar2.png" alt="" />
+           <img src="img/projects/navbar2.png" alt="" loading="lazy" />
           </div>
           <div class="swiper-slide">
-           <img src="img/projects/School-page.png" alt="" />
+           <img src="img/projects/School-page.png" alt="" loading="lazy" />
           </div>
          </div>
          <!-- If we need pagination -->
@@ -201,7 +201,7 @@
     </div>
     <div class="cards">
      <div class="card">
-      <img src="img/certificate/certificate1.png" alt="" />
+      <img src="img/certificate/certificate1.png" alt="" loading="lazy" />
       <div class="info-certificate">
        <h3>Javascript Basic</h3>
        <br />
@@ -220,7 +220,7 @@
       </div>
      </div>
      <div class="card">
-      <img src="img/certificate/certificate2.png" alt="" />
+      <img src="img/certificate/certificate2.png" alt="" loading="lazy" />
       <div class="info-certificate">
        <h3>Back-end Beginner</h3>
        <br />
@@ -260,6 +260,10 @@
    </div>
   </footer>
 
+  <div class="body-loading">
+   <span class="box"><span class="inner-loader"></span></span>
+  </div>
+
   <!-- CDN typed.js on github-->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
@@ -297,9 +301,9 @@
     info.style.display = "block";
     footer.style.display = "block";
    }
-   // console.log(localStorage.getItem("open"));
   </script>
   <script src="JS/script.js"></script>
+  <script src="JS/load.js"></script>
   <script src="JS/library/swiper2.js"></script>
  </body>
 </html>
