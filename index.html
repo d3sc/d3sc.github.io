@@ -297,6 +297,22 @@
     sessionStorage.setItem("open", "halo");
    }
 
+   const info_col = document.querySelectorAll(".info-col");
+   info_col.forEach((col) => {
+    col.addEventListener("mouseenter", (e) => {
+     for (let i = 0; i < e.target.children.length; i++) {
+      if (e.target.children[i].localName == "p") {
+       // Saat kondisi masuk kedalam if maka pengulangan berhenti, jadi i isinya sesuai yang sudah di kondisikan
+       // Misal i isinya 1, lalu masuk kedalam if dan pengulangan akan berhenti / keluar dari pengulangan, jadi i isinya akan selalu 1. karena sudah tidak di increment lagi.
+       const info_p = document.querySelectorAll("div.info-col > p");
+       info_p.forEach((i) => (i.style.color = "rgba(204, 204, 204, 0.6)"));
+       e.target.children[i].style.color = "rgba(204, 204, 204, 1)";
+       return;
+      }
+     }
+    });
+   });
+
    if (sessionStorage.getItem("open") == "halo") {
     info.style.display = "block";
     footer.style.display = "block";

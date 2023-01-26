@@ -165,29 +165,11 @@ body.dark .info-content .explanation-content h3 {
  font-weight: 800;
  color: var(--text-color);
 }
-.info-content .explanation-content h3 {
- font-size: 2em;
- font-family: "Nunito";
- font-weight: 800;
- color: #3a3b3c;
-}
+
 body.dark .info-content .explanation-content p {
  font-size: 0.8em;
  color: var(--text-color);
-}
-.info-content .explanation-content p {
- font-size: 0.8em;
- color: #3a3b3c;
-}
-
-.explanation-content a {
- margin-left: 15px;
- text-align: center;
- width: 150px;
-}
-.explanation-content a span {
- font-size: 1rem;
- font-weight: 600;
+ opacity: 0.6;
 }
 
 body.dark .info-text-content a {
@@ -293,11 +275,20 @@ body.dark .info h1 {
  margin: 10px 0;
 }
 .info-col p {
+ /* color: rgba(0, 0, 0, 0.6); */
  font-weight: 200;
+ /* opacity: 0.1; */
+ color: rgba(204, 204, 204, 0.6);
 }
-.info-col:hover {
+div.info-col:hover {
  transform: translateY(-5px);
  box-shadow: 0 4px 30px 0 rgba(255, 255, 255, 0.1);
+}
+
+.text-nyala {
+ opacity: 1;
+ /* color: rgba(204, 204, 204, 1); */
+ color: red;
 }
 
 /* Certificate */
@@ -360,9 +351,13 @@ body.dark .info h1 {
 }
 
 .card .info-certificate p {
+ font-family: "Poppins";
+ color: var(--text-color);
+ font-weight: 400;
+ font-size: 0.8em;
+
  letter-spacing: 0.03em;
- font-size: 0.9em;
- color: #ccc;
+ opacity: 0.6;
 }
 
 button.download {
