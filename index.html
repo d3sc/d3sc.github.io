@@ -1,325 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="application-name" content="Descx-Profile" />
-  <meta name="mobile-web-app-capable" content="yes" />
-  <meta name="theme-color" content="#050505" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="#050505" />
-  <meta name="author" content="Descx" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="og:type" content="profile" />
-  <meta name="og:title" content="Descx - Profile Web Page" />
-  <meta name="og:locale" content="en_US" />
-  <meta name="og:site_name" content="Profile-Page" />
-  <meta name="og:url" content="https://descx-profile/" />
-  <link
-   rel="icon"
-   href="img/profile.png"
-   type="image/png"
-   style="border-radius: 50%"
-  />
-  <title>Profile-Page Home</title>
-  <!-- My Css -->
-  <link rel="stylesheet" href="CSS/library/nav.css" />
-  <link rel="stylesheet" href="CSS/home.css" />
-  <link rel="stylesheet" href="CSS/library/config.css" />
-  <link rel="stylesheet" href="CSS/library/btn-ripple.css" />
-  <link rel="stylesheet" href="CSS/library/footer.css" />
-  <link rel="stylesheet" href="CSS/library/swiper.css" />
-  <link rel="stylesheet" href="CSS/library/load.css" />
-  <!-- My Font -->
-  <link
-   href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400&family=Montserrat:wght@500&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,600&family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,300;0,500;1,300&display=swap"
-   rel="stylesheet"
-  />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
 
-  <!-- My Icon (Boxicons CSS) -->
-  <link
-   href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-   rel="stylesheet"
-  />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&family=Poppins:wght@100;200;300;400&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
 
-  <!-- My Swiper on https://swiperjs.com/get-started in CDN-->
-  <link
-   rel="stylesheet"
-   href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
+        .uc {
+            width: 100%;
+            max-width: 200px;
+            height: auto;
+        }
 
-  <!-- my Animation -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
- </head>
- <body class="dark">
-  <section class="home">
-   <nav class="menu">
-    <div class="menu-toggle">
-     <input type="checkbox" class="input-btn" />
-     <span></span>
-     <span></span>
-     <span></span>
+        .context {
+            width: 100%;
+            position: absolute;
+            top: 30vh;
+            
+        }
+
+        .context h1{
+            font-family: "Nunito";
+            text-align: center;
+            color: #fff;
+            font-size: 3em;
+        }
+
+        .context p {
+            font-family: "Poppins";
+            text-align: center;
+            color: #fff;
+            font-size: 1.4em;
+            font-weight:200;
+        }
+
+
+        .area{
+            background: #4e54c8;  
+            background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+            width: 100%;
+            height:100vh;
+        }
+
+        .circles{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .circles li{
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            animation: animate 25s linear infinite;
+            bottom: -150px;
+        }
+
+        .circles li:nth-child(1){
+            left: 25%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+
+
+        .circles li:nth-child(2){
+            left: 10%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 2s;
+            animation-duration: 12s;
+        }
+
+        .circles li:nth-child(3){
+            left: 70%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 4s;
+        }
+
+        .circles li:nth-child(4){
+            left: 40%;
+            width: 60px;
+            height: 60px;
+            animation-delay: 0s;
+            animation-duration: 18s;
+        }
+
+        .circles li:nth-child(5){
+            left: 65%;
+            width: 20px;
+            height: 20px;
+            animation-delay: 0s;
+        }
+
+        .circles li:nth-child(6){
+            left: 75%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 3s;
+        }
+
+        .circles li:nth-child(7){
+            left: 35%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 7s;
+        }
+
+        .circles li:nth-child(8){
+            left: 50%;
+            width: 25px;
+            height: 25px;
+            animation-delay: 15s;
+            animation-duration: 45s;
+        }
+
+        .circles li:nth-child(9){
+            left: 20%;
+            width: 15px;
+            height: 15px;
+            animation-delay: 2s;
+            animation-duration: 35s;
+        }
+
+        .circles li:nth-child(10){
+            left: 85%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 0s;
+            animation-duration: 11s;
+        }
+
+
+
+        @keyframes animate {
+            0%{
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+                border-radius: 0;
+            }
+
+            100%{
+                transform: translateY(-1000px) rotate(720deg);
+                opacity: 0;
+                border-radius: 50%;
+            }
+        }
+
+        section{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: transparent;
+            overflow: hidden;
+        }
+        section .air{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+            background-size: 1000px 100px;
+        }
+        section .air.air1{
+            animation: wave 30s linear infinite;
+            z-index: 1000;
+            opacity: 0.8;
+            animation-delay: 0s;
+            bottom: 0;
+        }
+        section .air.air2{
+            animation: wave2 15s linear infinite;
+            z-index: 999;
+            opacity: 0.4;
+            animation-delay: -5s;
+            bottom: 10px;
+        }
+        section .air.air3{
+            animation: wave 30s linear infinite;
+            z-index: 998;
+            opacity: 0.3;
+            animation-delay: -2s;
+            bottom: 15px;
+        }
+        section .air.air4{
+            animation: wave2 5s linear infinite;
+            z-index: 997;
+            opacity: 0.2;
+            animation-delay: -5s;
+            bottom: 20px;
+        }
+        @keyframes wave{
+        0%{
+            background-position-x: 0px; 
+        }
+        100%{
+            background-position-x: 1000px; 
+        }
+        }
+        @keyframes wave2{
+        0%{
+            background-position-x: 0px; 
+        }
+        100%{
+            background-position-x: -1000px; 
+        }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="context">
+       <h1>Coming Soon</h1>
+       <p>Our website is under construction</p>
     </div>
-    <ul class="menu-list">
-     <li>
-      <a href="index.html"
-       ><button class="btn-nav"><span>Home</span></button></a
-      >
-     </li>
-     <li>
-      <a href="routes/about.html"
-       ><button class="btn-nav"><span>About</span></button></a
-      >
-     </li>
-     <li>
-      <a href="routes/project.html"
-       ><button class="btn-nav"><span>Project</span></button></a
-      >
-     </li>
-     <li>
-      <a href="routes/contact.html"
-       ><button class="btn-nav"><span>Contact</span></button></a
-      >
-     </li>
-    </ul>
-   </nav>
-   <div class="logo">
-    <a href="routes/about.html">D3sc</a>
-   </div>
-   <div class="visit-more">
-    <h3 id="visit-header">
-     Hello,<br />
-     I am a <span id="typing-text"></span>
-    </h3>
-    <p id="visit-text">Want to know more about me?</p>
-    <br />
-    <a href="#B1"
-     ><button class="btn-visit" id="main-btn" onclick="visit();">
-      Visit More
-     </button></a
-    >
-   </div>
-  </section>
 
-  <!-- card -->
-  <section class="info main-info">
-   <div class="main-page">
-    <div class="text-box">
-     <div class="inform">
-      <div class="info-text-content" id="B1">
-       <div class="user">
-        <a href="routes/contact.html"><p>Descx</p></a>
-       </div>
-       <div class="title-user">
-        <ul>
-         <li>
-          <a href="#what"><p>Programmer |</p></a>
-         </li>
-         <li>
-          <a href="#what"><p>Web Dev |</p></a>
-         </li>
-         <li>
-          <a href="#what"><p>Web Designer</p></a>
-         </li>
-        </ul>
-       </div>
-      </div>
-      <div class="info-content">
-       <div class="added-swiper">
-        <!-- Slider main container -->
-        <div class="swiper">
-         <!-- Additional required wrapper -->
-         <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-           <img src="img/projects/craccken-new.png" alt="" loading="lazy" />
-          </div>
-          <div class="swiper-slide">
-           <img src="img/projects/parallax.png" alt="" loading="lazy" />
-          </div>
-          <div class="swiper-slide">
-           <img src="img/projects/navbar2.png" alt="" loading="lazy" />
-          </div>
-          <div class="swiper-slide">
-           <img src="img/projects/School-page.png" alt="" loading="lazy" />
-          </div>
-         </div>
-         <!-- If we need pagination -->
-         <div class="swiper-pagination"></div>
-        </div>
-       </div>
-       <div class="explanation-content">
-        <p>See more of my projects</p>
-        <h3>What's New?</h3>
-        <br />
-        <p>
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolore
-         sequi esse aliquid dolores ex totam corporis dicta tempora eum.
-        </p>
-        <br />
-        <a href="routes/about.html"
-         ><button class="btn-visit" id="main-btn">About Me</button></a
-        >
-       </div>
-      </div>
-     </div>
+
+    <div class="area" >
+            <ul class="circles">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+            </ul>
     </div>
-   </div>
-   <h1 id="what">What is?</h1>
-   <div class="row">
-    <div class="info-col info-col-first">
-     <h3>Programmer</h3>
-     <p>
-      A programmer is someone who has the ability or skill to write and design
-      computer program code (syntax) using computer programming languages
-      ​​(Java, PHP, Javascript, etc.).
-     </p>
-    </div>
-    <div class="info-col">
-     <h3>Web Dev</h3>
-     <p>
-      A web developer is a programmer who creates programs and applications for
-      the world wide web.
-     </p>
-    </div>
-    <div class="info-col">
-     <h3>Web Designer</h3>
-     <p>
-      People who do web design activities are known as web designers. In general
-      the web designer is an IT professional who is responsible for designing
-      the layout, visual appearance and usability of the website.
-     </p>
-    </div>
-   </div>
 
-   <!-- Certificate -->
-
-   <div class="content">
-    <div class="certificate">
-     <h2>Certificate</h2>
-    </div>
-    <div class="cards">
-     <div class="card">
-      <img src="img/certificate/certificate1.png" alt="" loading="lazy" />
-      <div class="info-certificate">
-       <h3>Javascript Basic</h3>
-       <br />
-       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
-        consequatur perferendis corporis corrupti necessitatibus quod!
-       </p>
-       <br />
-       <a
-        href="data/sertifikat_course_256_2280113_011022190838.pdf"
-        download
-        target="_blank"
-       >
-        <button class="btn-visit download">Download pdf</button>
-       </a>
-      </div>
-     </div>
-     <div class="card">
-      <img src="img/certificate/certificate2.png" alt="" loading="lazy" />
-      <div class="info-certificate">
-       <h3>Back-end Beginner</h3>
-       <br />
-       <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
-        repudiandae deleniti ipsa hic. Aspernatur, maiores rerum.
-       </p>
-       <br />
-       <a
-        href="data/sertifikat_course_261_2280113_281222224413.pdf"
-        download
-        target="_blank"
-       >
-        <button class="btn-visit download">Download pdf</button>
-       </a>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-
-  <!-- end of Certificate -->
-
-  <!-- footer -->
-  <footer class="main-footer">
-   <h4>About me</h4>
-   <p class="footer-content">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquam
-    quasi dignissimos maxime <br />
-   </p>
-   <hr />
-   <div class="footer-bottom">
-    <p class="footer-info-1">
-     <i class="bx bx-copyright"></i> All Rights Reserved 2022.
-    </p>
-    <p class="footer-info-2">Designed by <span>D3sc</span></p>
-   </div>
-  </footer>
-
-  <div class="body-loading">
-   <span class="box"><span class="inner-loader"></span></span>
-  </div>
-
-  <!-- CDN typed.js on github-->
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-  <!-- JS Swiper On https://swiperjs.com/get-started in CDN -->
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-   AOS.init({
-    once: true,
-   });
-
-   var typed = new Typed("#typing-text", {
-    strings: ["Web Developer", "Programmer", "Web Designer"],
-    startDelay: 1000,
-    typeSpeed: 100,
-    backSpeed: 80,
-    backDelay: 1000,
-    loop: true,
-    fadeOutDelay: 500,
-    stringsElement: null,
-   });
-
-   const info = document.querySelector(".main-info");
-   const footer = document.querySelector(".main-footer");
-   function visit(a) {
-    info.style.display = "block";
-    footer.style.display = "block";
-    // SessionStorage memiliki jangka waktu tidak seperti localStorage.
-    // kalau ingin diganti, ganti aja ngak ngaruh cmn jangka waktu doang.
-    sessionStorage.setItem("open", "halo");
-   }
-
-   const info_col = document.querySelectorAll(".info-col");
-   info_col.forEach((col) => {
-    col.addEventListener("mouseenter", (e) => {
-     for (let i = 0; i < e.target.children.length; i++) {
-      if (e.target.children[i].localName == "p") {
-       // Saat kondisi masuk kedalam if maka pengulangan berhenti, jadi i isinya sesuai yang sudah di kondisikan
-       // Misal i isinya 1, lalu masuk kedalam if dan pengulangan akan berhenti / keluar dari pengulangan, jadi i isinya akan selalu 1. karena sudah tidak di increment lagi.
-       const info_p = document.querySelectorAll("div.info-col > p");
-       info_p.forEach((i) => (i.style.color = "rgba(204, 204, 204, 0.6)"));
-       e.target.children[i].style.color = "rgba(204, 204, 204, 1)";
-       return;
-      }
-     }
-    });
-   });
-
-   if (sessionStorage.getItem("open") == "halo") {
-    info.style.display = "block";
-    footer.style.display = "block";
-   }
-  </script>
-  <script src="JS/script.js"></script>
-  <script src="JS/load.js"></script>
-  <script src="JS/library/swiper2.js"></script>
- </body>
+    <section>
+        <div class='air air1'></div>
+        <div class='air air2'></div>
+        <div class='air air3'></div>
+        <div class='air air4'></div>
+    </section>
+</body>
 </html>
