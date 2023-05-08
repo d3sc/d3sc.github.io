@@ -31,14 +31,51 @@
             text-align: center;
             color: #fff;
             font-size: 3em;
+            text-shadow: .1em .1em 0 rgba(0, 0, 0, 0.2);
+            /* text-shadow: .1em .1em 0 hsl(200 50% 30%); */
         }
-
+        
         .context p {
             font-family: "Poppins";
             text-align: center;
             color: #fff;
-            font-size: 1.4em;
+            font-size: 1.2em;
             font-weight:200;
+            text-shadow: .1em .1em 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .context button {
+            display: block;
+            background: transparent;
+
+            margin-inline: auto;
+            margin-top: 2rem;
+            padding: 1.2rem 1.8rem;
+
+            border-radius: 0.3rem;
+            border: 2px solid #8f94fb;
+
+            color: #fff;
+            font-family: "Poppins";
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            font-weight: 600;
+            
+            cursor: pointer;
+
+            transition: all 0.3s ease-out;
+
+            opacity: 0.7;
+
+            position: relative;
+            z-index: 999;
+            box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+            backdrop-filter: saturate(110%) blur(34px);
+        }
+
+        .context button:hover {
+            opacity: 1;
+            box-shadow: 0, 10px, 15px, -3px, rgba(0, 0, 0, 0.6);
         }
 
 
@@ -230,9 +267,11 @@
     <div class="context">
        <h1>Coming Soon</h1>
        <p>Our website is under construction</p>
+       <button>Visit More</button>
     </div>
 
 
+    <!-- Box background animation -->
     <div class="area" >
             <ul class="circles">
                     <li></li>
@@ -248,6 +287,7 @@
             </ul>
     </div>
 
+    <!-- Wave animation -->
     <section>
         <div class='air air1'></div>
         <div class='air air2'></div>
