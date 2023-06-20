@@ -1,301 +1,394 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="application-name" content="d3sc" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      http-equiv="cache-control"
+      content="public, max-age=31536000, must-revalidate"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+    <meta name="author" content="d3sc" />
+    <meta name="description" content="Personal Website" />
+    <meta name="og:title" content="d3sc - Personal Website" />
+    <meta name="og:locale" content="en_US" />
+    <meta name="og:site_name" content="d3sc" />
+    <meta name="og:description" content="d3sc | Personal Website." />
+    <meta name="og:url" content="https://d3sc.my.id" />
+    <meta name="og:type" content="Personal Website" />
+    <meta
+      name="keywords"
+      content="Personal Website, d3sc, d3sc Personal Website, d3sc Profile, d3sc, siapa itu d3sc, profil tentang d3sc, d3sc rabani keren"
+    />
+    <meta name="robots" content="notranslate" />
+    <meta name="rating" content="General" />
+    <meta
+      name="pinterest"
+      content="nopin"
+      description="Sorry, you can't save from my website XD"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, height=device-height, initial-scale=1.0"
+    />
     <title>Coming Soon</title>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&family=Poppins:wght@100;200;300;400&display=swap');
-        *{
-            margin: 0px;
-            padding: 0px;
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&family=Poppins:wght@100;200;300;400&display=swap");
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .uc {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+      }
+
+      .context {
+        width: 100%;
+        position: absolute;
+        top: 30vh;
+      }
+
+      .context h1 {
+        font-family: "Nunito";
+        text-align: center;
+        color: #fff;
+        font-size: 3em;
+        text-shadow: 0.1em 0.1em 0 rgba(0, 0, 0, 0.2);
+        /* text-shadow: .1em .1em 0 hsl(200 50% 30%); */
+      }
+
+      .context p {
+        font-family: "Poppins";
+        text-align: center;
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: 200;
+        text-shadow: 0.1em 0.1em 0 rgba(0, 0, 0, 0.1);
+      }
+
+      .context button {
+        display: block;
+        background: transparent;
+
+        margin-inline: auto;
+        margin-top: 2rem;
+        padding: 1.2rem 1.8rem;
+
+        border-radius: 0.3rem;
+        border: 2px solid #8f94fb;
+
+        color: #fff;
+        font-family: "Poppins";
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        font-weight: 600;
+
+        cursor: pointer;
+
+        transition: all 0.3s ease-out;
+
+        opacity: 0.7;
+
+        position: relative;
+        z-index: 999;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
+        backdrop-filter: saturate(110%) blur(34px);
+      }
+
+      .context button:hover {
+        opacity: 1;
+        box-shadow: 0, 10px, 15px, -3px, rgba(0, 0, 0, 0.6);
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      .area {
+        background: #4e54c8;
+        background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);
+        width: 100%;
+        height: 100vh;
+      }
+
+      .circles {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .circles li {
+        position: absolute;
+        display: block;
+        list-style: none;
+        width: 20px;
+        height: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        animation: animate 25s linear infinite;
+        bottom: -150px;
+      }
+
+      .circles li:nth-child(1) {
+        left: 25%;
+        width: 80px;
+        height: 80px;
+        animation-delay: 0s;
+      }
+
+      .circles li:nth-child(2) {
+        left: 10%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 2s;
+        animation-duration: 12s;
+      }
+
+      .circles li:nth-child(3) {
+        left: 70%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 4s;
+      }
+
+      .circles li:nth-child(4) {
+        left: 40%;
+        width: 60px;
+        height: 60px;
+        animation-delay: 0s;
+        animation-duration: 18s;
+      }
+
+      .circles li:nth-child(5) {
+        left: 65%;
+        width: 20px;
+        height: 20px;
+        animation-delay: 0s;
+      }
+
+      .circles li:nth-child(6) {
+        left: 75%;
+        width: 110px;
+        height: 110px;
+        animation-delay: 3s;
+      }
+
+      .circles li:nth-child(7) {
+        left: 35%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 7s;
+      }
+
+      .circles li:nth-child(8) {
+        left: 50%;
+        width: 25px;
+        height: 25px;
+        animation-delay: 15s;
+        animation-duration: 45s;
+      }
+
+      .circles li:nth-child(9) {
+        left: 20%;
+        width: 15px;
+        height: 15px;
+        animation-delay: 2s;
+        animation-duration: 35s;
+      }
+
+      .circles li:nth-child(10) {
+        left: 85%;
+        width: 150px;
+        height: 150px;
+        animation-delay: 0s;
+        animation-duration: 11s;
+      }
+
+      @keyframes animate {
+        0% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+          border-radius: 0;
         }
 
-        .uc {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
+        100% {
+          transform: translateY(-1000px) rotate(720deg);
+          opacity: 0;
+          border-radius: 50%;
         }
+      }
 
-        .context {
-            width: 100%;
-            position: absolute;
-            top: 30vh;
-            
-        }
+      section {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: transparent;
+        overflow: hidden;
+      }
+      section .air {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100px;
+        background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
+        background-size: 1000px 100px;
+      }
+      section .air.air1 {
+        animation: wave 30s linear infinite;
+        z-index: 1000;
+        opacity: 0.8;
+        animation-delay: 0s;
+        bottom: 0;
+      }
+      section .air.air2 {
+        animation: wave2 15s linear infinite;
+        z-index: 999;
+        opacity: 0.4;
+        animation-delay: -5s;
+        bottom: 10px;
+      }
+      section .air.air3 {
+        animation: wave 30s linear infinite;
+        z-index: 998;
+        opacity: 0.3;
+        animation-delay: -2s;
+        bottom: 15px;
+      }
+      section .air.air4 {
+        animation: wave2 5s linear infinite;
+        z-index: 997;
+        opacity: 0.2;
+        animation-delay: -5s;
+        bottom: 20px;
+      }
+      nav {
+        z-index: 999;
+        width: 100%;
+        position: absolute;
+        background-color: transparent;
+      }
+      nav .items {
+        padding: 1rem;
 
-        .context h1{
-            font-family: "Nunito";
-            text-align: center;
-            color: #fff;
-            font-size: 3em;
-            text-shadow: .1em .1em 0 rgba(0, 0, 0, 0.2);
-            /* text-shadow: .1em .1em 0 hsl(200 50% 30%); */
+        display: flex;
+        gap: 1rem;
+        justify-content: end;
+      }
+      nav .items li {
+        list-style: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+      nav .items li:hover {
+        opacity: 0.5;
+      }
+      @keyframes wave {
+        0% {
+          background-position-x: 0px;
         }
-        
+        100% {
+          background-position-x: 1000px;
+        }
+      }
+      @keyframes wave2 {
+        0% {
+          background-position-x: 0px;
+        }
+        100% {
+          background-position-x: -1000px;
+        }
+      }
+      @media screen and (max-width: 468px) {
+        .context h1 {
+          font-size: 2rem;
+        }
         .context p {
-            font-family: "Poppins";
-            text-align: center;
-            color: #fff;
-            font-size: 1.2em;
-            font-weight:200;
-            text-shadow: .1em .1em 0 rgba(0, 0, 0, 0.1);
+          font-size: 1rem;
         }
-
         .context button {
-            display: block;
-            background: transparent;
-
-            margin-inline: auto;
-            margin-top: 2rem;
-            padding: 1.2rem 1.8rem;
-
-            border-radius: 0.3rem;
-            border: 2px solid #8f94fb;
-
-            color: #fff;
-            font-family: "Poppins";
-            letter-spacing: 0.2em;
-            text-transform: uppercase;
-            font-weight: 600;
-            
-            cursor: pointer;
-
-            transition: all 0.3s ease-out;
-
-            opacity: 0.7;
-
-            position: relative;
-            z-index: 999;
-            box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.3);
-            backdrop-filter: saturate(110%) blur(34px);
+          padding: 1rem 1.2rem;
         }
-
-        .context button:hover {
-            opacity: 1;
-            box-shadow: 0, 10px, 15px, -3px, rgba(0, 0, 0, 0.6);
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .area{
-            background: #4e54c8;  
-            background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
-            width: 100%;
-            height:100vh;
-        }
-
-        .circles{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .circles li{
-            position: absolute;
-            display: block;
-            list-style: none;
-            width: 20px;
-            height: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            animation: animate 25s linear infinite;
-            bottom: -150px;
-        }
-
-        .circles li:nth-child(1){
-            left: 25%;
-            width: 80px;
-            height: 80px;
-            animation-delay: 0s;
-        }
-
-
-        .circles li:nth-child(2){
-            left: 10%;
-            width: 20px;
-            height: 20px;
-            animation-delay: 2s;
-            animation-duration: 12s;
-        }
-
-        .circles li:nth-child(3){
-            left: 70%;
-            width: 20px;
-            height: 20px;
-            animation-delay: 4s;
-        }
-
-        .circles li:nth-child(4){
-            left: 40%;
-            width: 60px;
-            height: 60px;
-            animation-delay: 0s;
-            animation-duration: 18s;
-        }
-
-        .circles li:nth-child(5){
-            left: 65%;
-            width: 20px;
-            height: 20px;
-            animation-delay: 0s;
-        }
-
-        .circles li:nth-child(6){
-            left: 75%;
-            width: 110px;
-            height: 110px;
-            animation-delay: 3s;
-        }
-
-        .circles li:nth-child(7){
-            left: 35%;
-            width: 150px;
-            height: 150px;
-            animation-delay: 7s;
-        }
-
-        .circles li:nth-child(8){
-            left: 50%;
-            width: 25px;
-            height: 25px;
-            animation-delay: 15s;
-            animation-duration: 45s;
-        }
-
-        .circles li:nth-child(9){
-            left: 20%;
-            width: 15px;
-            height: 15px;
-            animation-delay: 2s;
-            animation-duration: 35s;
-        }
-
-        .circles li:nth-child(10){
-            left: 85%;
-            width: 150px;
-            height: 150px;
-            animation-delay: 0s;
-            animation-duration: 11s;
-        }
-
-
-
-        @keyframes animate {
-            0%{
-                transform: translateY(0) rotate(0deg);
-                opacity: 1;
-                border-radius: 0;
-            }
-
-            100%{
-                transform: translateY(-1000px) rotate(720deg);
-                opacity: 0;
-                border-radius: 50%;
-            }
-        }
-
-        section{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100vh;
-            background: transparent;
-            overflow: hidden;
-        }
-        section .air{
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100px;
-            background: url(https://1.bp.blogspot.com/-xQUc-TovqDk/XdxogmMqIRI/AAAAAAAACvI/AizpnE509UMGBcTiLJ58BC6iViPYGYQfQCLcBGAsYHQ/s1600/wave.png);
-            background-size: 1000px 100px;
-        }
-        section .air.air1{
-            animation: wave 30s linear infinite;
-            z-index: 1000;
-            opacity: 0.8;
-            animation-delay: 0s;
-            bottom: 0;
-        }
-        section .air.air2{
-            animation: wave2 15s linear infinite;
-            z-index: 999;
-            opacity: 0.4;
-            animation-delay: -5s;
-            bottom: 10px;
-        }
-        section .air.air3{
-            animation: wave 30s linear infinite;
-            z-index: 998;
-            opacity: 0.3;
-            animation-delay: -2s;
-            bottom: 15px;
-        }
-        section .air.air4{
-            animation: wave2 5s linear infinite;
-            z-index: 997;
-            opacity: 0.2;
-            animation-delay: -5s;
-            bottom: 20px;
-        }
-        @keyframes wave{
-        0%{
-            background-position-x: 0px; 
-        }
-        100%{
-            background-position-x: 1000px; 
-        }
-        }
-        @keyframes wave2{
-        0%{
-            background-position-x: 0px; 
-        }
-        100%{
-            background-position-x: -1000px; 
-        }
-        }
+      }
     </style>
-
-</head>
-<body>
+  </head>
+  <body>
+    <nav>
+      <ul class="items">
+        <li>
+          <a href="https://github.com/d3sc" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="34"
+              viewBox="0 0 24 24"
+              style="fill: rgba(255, 255, 255, 0.8)"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"
+              ></path></svg
+          ></a>
+        </li>
+        <li>
+          <a href="https://profile.d3sc.my.id" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="34"
+              height="34"
+              viewBox="0 0 24 24"
+              style="fill: rgba(255, 255, 255, 0.8)"
+            >
+              <path
+                d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"
+              ></path></svg
+          ></a>
+        </li>
+      </ul>
+    </nav>
     <div class="context">
-       <h1>Coming Soon</h1>
-       <p>Our website is under construction</p>
-       <a href="https://github.com/d3sc/tugas-web/archive/refs/heads/main.zip"><button>Visit More</button></a>
+      <h1>Coming Soon</h1>
+      <p>Our website is under construction</p>
+      <a href="https://github.com/d3sc/tugas-web/archive/refs/heads/main.zip"
+        ><button>Visit More</button></a
+      >
     </div>
 
-
     <!-- Box background animation -->
-    <div class="area" >
-            <ul class="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-            </ul>
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
 
     <!-- Wave animation -->
     <section>
-        <div class='air air1'></div>
-        <div class='air air2'></div>
-        <div class='air air3'></div>
-        <div class='air air4'></div>
+      <div class="air air1"></div>
+      <div class="air air2"></div>
+      <div class="air air3"></div>
+      <div class="air air4"></div>
     </section>
-</body>
+  </body>
 </html>
