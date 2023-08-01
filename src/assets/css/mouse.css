@@ -1,0 +1,64 @@
+.hero-mouse {
+  /* display: none; */
+  margin-top: 70px;
+  width: fit-content;
+  margin-left: -15px;
+  text-align: center;
+  z-index: 5;
+  font-size: 12px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  transition: all 0.4s ease;
+}
+.hero-mouse h3 {
+  margin-left: -14px;
+  padding-top: 15px;
+}
+
+.mouse-icon {
+  width: 20px;
+  height: 30px;
+  border-radius: 15px;
+  position: relative;
+  text-align: center;
+}
+.mouse-icon span {
+  width: 3px;
+  height: 8px;
+  margin: 2px auto 0;
+  display: block;
+  border-radius: 5px;
+  -webkit-animation: 1.2s ease infinite wheel-up-down;
+  animation: 1.2s ease infinite wheel-up-down;
+}
+
+@-webkit-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 10px;
+    opacity: 0;
+  }
+}
+
+@keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 10px;
+    opacity: 0;
+  }
+}
