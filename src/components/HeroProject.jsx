@@ -13,7 +13,7 @@ export default function HeroProject() {
         </div>
         <div className="w-full px-4">
           <div className="flex flex-wrap items-center justify-center gap-10">
-            <video controls width="560" height="315">
+            <video controls width="560" height="315" type="video/mp4">
               <source src="https://drive.google.com/uc?id=1xhScxitJaFI71xM4tsd0KRkl6TPupRyF&export=download" />
             </video>
             <div className="lg:w-1/2">
