@@ -16,8 +16,8 @@ export default function About() {
               <span className="text-dark"> 2 years of experience </span>
               in this profession. I have an understanding of
               <span className="text-dark"> web development </span>
-              dan telah memiliki keahlian yang diperlukan untuk
-              <span className="text-dark"> and have the necessary skills to create functional and attractive websites. </span>.
+              and have the necessary expertise to
+              <span className="text-dark"> create functional and attractive websites.</span>
             </p>
             <div className="flex items center flex-wrap gap-2">
               <a href="https://github.com/d3sc" target="_blank" className="icon">

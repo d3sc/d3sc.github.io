@@ -8,7 +8,7 @@ export default function Portfolio() {
         <div className="w-full px-4">
           <div className="max-w-xl mx-auto text-center mb-16">
             <h4 className="font-semibold text-lg text-primary mb-2 uppercase after:w-24 after:h-1 after:content-[''] after:block after:bg-primary after:mx-auto">
-              Projects
+              Project
             </h4>
             <h2 className="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Latest Project</h2>
             <p className="font-medium text-base text-secondary md:text-lg">I've been busy lately working on the following project.</p>

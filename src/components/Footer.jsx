@@ -56,7 +56,7 @@ export default function Footer() {
       </div>
       <hr className="opacity-20" />
       <div className="mx-8 pt-6">
-        <h4 className="text-slate-300 opacity-70">
+        <h4 className="text-slate-300 opacity-70 max-sm:pb-16">
           ©️ 2023{" "}
           <a href="https://github.com/d3sc" target="_blank" className="font-bold text-primary">
             Ikbar Rabbani
