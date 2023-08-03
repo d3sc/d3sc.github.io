@@ -14,12 +14,10 @@ export default function HeroProject() {
         <div className="w-full px-4">
           <div className="flex flex-wrap items-center justify-center gap-10">
             <iframe
+              src="https://drive.google.com/file/d/1xhScxitJaFI71xM4tsd0KRkl6TPupRyF/preview"
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/9pyZO3N_ltE"
-              title="YouTube video player"
-              frameBorder="0"
-              allowFullScreen></iframe>
+              allow="autoplay"></iframe>
             <div className="w-1/2  ">
               <h2 className="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Samurai Game</h2>
               <p className="font-medium text-base text-secondary md:text-lg">
