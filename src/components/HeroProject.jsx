@@ -24,6 +24,12 @@ export default function HeroProject() {
                 I am a beginner game maker, recently I made a samurai themed game, in this game we can attack, jump, run, and shoot shuriken. in the
                 game there are enemies that we can attack and kill . I make this game with Godot 4.
               </p>
+              <br />
+              <a
+                href="https://youtu.be/9pyZO3N_ltE"
+                className="text-base capitalize font-semibold text-white bg-primary py-3 px-8 rounded-md hover:shadow-lg hover:opacity-80 transition-all duration-300 ease-in-out mt-10">
+                see more
+              </a>
             </div>
           </div>
         </div>
