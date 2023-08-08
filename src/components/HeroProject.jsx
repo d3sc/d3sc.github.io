@@ -13,13 +13,10 @@ export default function HeroProject() {
         </div>
         <div className="w-full px-4">
           <div className="flex flex-wrap items-center justify-center gap-10">
-            <iframe
-              allowFullScreen
-              src="https://drive.google.com/file/d/1xhScxitJaFI71xM4tsd0KRkl6TPupRyF/preview"
-              width="560"
-              height="315"
-              allow="autoplay"></iframe>
-            <div className="w-1/2">
+            <video width={560} height={315} autoPlay controls src="https://drive.google.com/uc?id=1xhScxitJaFI71xM4tsd0KRkl6TPupRyF&export=download">
+              <source src="https://drive.google.com/uc?id=1xhScxitJaFI71xM4tsd0KRkl6TPupRyF&export=download" />
+            </video>
+            <div className="lg:w-1/2">
               <h2 className="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">Samurai Game</h2>
               <p className="font-medium text-base text-secondary md:text-lg">
                 I am a beginner game maker, recently I made a samurai themed game, in this game we can attack, jump, run, and shoot shuriken. in the
