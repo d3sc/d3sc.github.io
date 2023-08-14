@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Project({ ...props }) {
   return (
-    <div className="mb-12 p-4 md:w-1/2">
+    <div className="mb-12 p-4 md:w-2/5">
       <a href={props.link} target="_blank">
         <div className="rounded-md shadow-md overflow-hidden">
           <img src={props.img} alt={props.title} />
