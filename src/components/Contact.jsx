@@ -20,7 +20,7 @@ export default function Contact() {
               </div>
               <div className="flex justify-between items-center flex-wrap sm:w-4/5 mx-auto">
                 {DataContact.contact.map((data, i) => (
-                  <ContactItems path={data.path} title={data.title}>
+                  <ContactItems key={i} path={data.path} title={data.title}>
                     <div dangerouslySetInnerHTML={{ __html: data.fragment }}></div>
                   </ContactItems>
                 ))}
