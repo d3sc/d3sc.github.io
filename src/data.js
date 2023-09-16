@@ -199,8 +199,15 @@ export const DataProject = {
       img: "/project/project4.png",
       link: "https://auth.d3sc.my.id",
       title: "Auth Passport",
-      desc: "I've created a simple chat application, and the application can communicate with anyone privately. I store contact data in the firebase database.",
+      desc: "I've created a login system that is integrated with passport js where users can login with email, github, etc.",
       tech: ["javascript", "react js", "CSS", "passport js"],
+    },
+    {
+      img: "/project/project5.png",
+      link: "https://game.d3sc.my.id/register",
+      title: "Mini Game With Auth",
+      desc: "I've created a simple Mini Game, and this application can be played by anyone, with some rules. this application is connected to the mongodb database.",
+      tech: ["javascript", "react js", "CSS", "mongoDB"],
     },
   ],
 };
