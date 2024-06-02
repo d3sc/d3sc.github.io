@@ -9,7 +9,7 @@ export default function Header() {
         <div className="flex items-center justify-between relative">
           <div className="lg:px-4 w-full">
             <a href="#home" className="inline-block font-bold text-lg text-primary py-6">
-              Ikbar Rabbani
+              {DataHeader[0]}
             </a>
           </div>
           <div className="flex items-center justify-end px-4 w-3/4">
@@ -17,7 +17,7 @@ export default function Header() {
               <ul className="max-md:hidden flex items-center justify-end">
                 {dataNavbar.map((e) => (
                   <li key={e} className="group py-2 mx-3">
-                    <a href="#home" className="text-base text-dark flex group-hover:text-primary">
+                    <a href={`#${e.toLowerCase()}`} className="text-base text-dark flex group-hover:text-primary">
                       {e}
                     </a>
                   </li>

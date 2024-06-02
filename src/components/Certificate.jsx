@@ -4,7 +4,7 @@ import { DataCertificate } from "../data";
 
 export default function Certificate() {
   return (
-    <section id="certificate" className="pt-36 pb-32 bg-slate-100">
+    <section id="certificate" className="pt-36 pb-32 bg-slate-100 ">
       <div className="container">
         <div className="w-full px-4">
           <div className="max-w-xl mx-auto text-center mb-16">
@@ -13,7 +13,7 @@ export default function Certificate() {
             <p className="font-medium text-base text-secondary md:text-lg">{DataCertificate.subtitle}</p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-center">
+        <div className="w-full px-4 gap-6 flex flex-wrap justify-center lg:w-10/12 lg:mx-auto">
           {DataCertificate.certificate.map((item, i) => (
             <Card key={i} img={item.img} link={item.link} title={item.title} desc={item.desc} />
           ))}

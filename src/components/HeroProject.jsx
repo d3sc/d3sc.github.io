@@ -14,9 +14,10 @@ export default function HeroProject() {
         </div>
         <div className="w-full px-4">
           <div className="flex flex-wrap items-center justify-center gap-10">
-            <video width={560} height={315} controls src={DataHeroProject.videoSource}>
+            {/* <video width={560} height={315} controls src={DataHeroProject.videoSource}>
               <source src={DataHeroProject.videoSource} />
-            </video>
+            </video> */}
+            <iframe width="560" height="315" src={DataHeroProject.videoSource} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <div className="lg:w-1/2">
               <h2 className="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl">{DataHeroProject.titleGame}</h2>
               <p className="font-medium text-base text-secondary md:text-lg">{DataHeroProject.desc}</p>
