@@ -3,9 +3,6 @@ import { DataHeader } from "../data";
 
 export default function Header() {
   const dataNavbar = DataHeader[1].navbar;
-  // dataNavbar.forEach((e) => {
-  //   console.log(e);
-  // });
   return (
     <header className="bg-white fixed max-md:bottom-0 max-md:left-0 w-full flex items-center z-10">
       <div className="container lg:w-4/5">

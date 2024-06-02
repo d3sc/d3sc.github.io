@@ -21,6 +21,11 @@ export default function Hero() {
                 <path fillRule="evenodd" clipRule="evenodd" d={DataHero.iconSvg.github.path[0]}></path>
               </svg>
             </a>
+            <a href={DataHero.iconSvg.linkedin.link} target="_blank" className="cursor-pointer w-fit">
+              <svg className="fill-primary" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fillRule="evenodd" clipRule="evenodd" d={DataHero.iconSvg.linkedin.path[0]}></path>
+              </svg>
+            </a>
           </div>
           <div className="h-auto self-center px-4 max-sm:order-2 sm:w-1/2 lg:w-2/6">
             <h1 className="text-base font-semibold text-primary md:text-lg lg:text-xl">
