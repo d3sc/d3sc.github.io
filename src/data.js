@@ -31,7 +31,11 @@ export const DataHero = {
     "M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z",
     "M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z",
   ],
-  descHero: ["Only someone who is", " Learning, Evolving, and Innovating ", "in Technology"],
+  descHero: [
+    "Only someone who is",
+    " Learning, Evolving, and Innovating ",
+    "in Technology",
+  ],
 };
 
 export const DataAbout = {
@@ -187,6 +191,13 @@ export const DataProject = {
   subtitle: "I've been busy lately working on the following project.",
   project: [
     {
+      img: "/project/project7.png",
+      link: "https://github.com/d3sc/kulineran/",
+      title: "FnB Website",
+      desc: "Kulineran is FnB website that can allow you for seeing recomendation food from indonesian, and there's admin can operate CRUD on that website",
+      tech: ["javascript", "react js", "json-web-server", "css"],
+    },
+    {
       img: "/project/project1.png",
       link: "https://schl.smkletris2pamulang.sch.id/index.html",
       title: "School Website",
@@ -200,27 +211,20 @@ export const DataProject = {
       desc: "A cashier application with Laravel and Mysql database, which can be used directly. the features in this application are still incomplete.",
       tech: ["php", "bootstrap 5", "laravel", "livewire", "mysql"],
     },
-    // {
-    //   img: "/project/project3.png",
-    //   link: "https://chat.d3sc.my.id",
-    //   title: "Chat APP",
-    //   desc: "I've created a simple chat application, and the application can communicate with anyone privately. I store contact data in the firebase database.",
-    //   tech: ["javascript", "react js", "sass", "firebase"],
-    // },
-    // {
-    //   img: "/project/project4.png",
-    //   link: "https://auth.d3sc.my.id",
-    //   title: "Auth Passport",
-    //   desc: "I've created a login system that is integrated with passport js where users can login with email, github, etc.",
-    //   tech: ["javascript", "react js", "CSS", "passport js"],
-    // },
-    // {
-    //   img: "/project/project5.png",
-    //   link: "https://game.d3sc.my.id/register",
-    //   title: "Mini Game With Auth",
-    //   desc: "I've created a simple Mini Game, and this application can be played by anyone, with some rules. this application is connected to the mongodb database.",
-    //   tech: ["javascript", "react js", "CSS", "mongoDB"],
-    // },
+    {
+      img: "/project/project8-1.png",
+      link: "https://github.com/d3sc/laravel-blog",
+      title: "Blog Website",
+      desc: "i've already make blog website using laravel and bootstrap, and there's a lot feature in admin page. the user can make their own blog and the admin can manage it.",
+      tech: ["Laravel", "Bootstrap 4"],
+    },
+    {
+      img: "/project/project3.png",
+      link: "https://github.com/d3sc/chat-app",
+      title: "Chat APP",
+      desc: "I've created a simple chat application, and the application can communicate with anyone privately. I store contact data in the firebase database.",
+      tech: ["javascript", "react js", "sass", "firebase"],
+    },
     {
       img: "/project/project6.png",
       link: "https://github.com/d3sc/anime-scraping/",
@@ -242,7 +246,8 @@ export const DataHeroProject = {
 export const DataCertificate = {
   heroTitle: "certificate",
   typeTitle: "My Achievements",
-  subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iure eum totam quisquam quas, vel iusto quibusdam voluptas similique ipsum.",
+  subtitle:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iure eum totam quisquam quas, vel iusto quibusdam voluptas similique ipsum.",
   certificate: [
     {
       img: "/certificate/certificate1.png",
@@ -262,13 +267,20 @@ export const DataCertificate = {
       title: "Basic Python for beginners",
       desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, maiores!",
     },
+    {
+      img: "/certificate/certificate4.png",
+      link: "#",
+      title: "Laravel and Nuxt js",
+      desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, maiores!",
+    },
   ],
 };
 
 export const DataContact = {
   heroTitle: "Contact",
   typeTitle: "Contact Me",
-  subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iure eum totam quisquam quas, vel iusto quibusdam voluptas similique ipsum.",
+  subtitle:
+    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iure eum totam quisquam quas, vel iusto quibusdam voluptas similique ipsum.",
   contact: [
     {
       path: "M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z",

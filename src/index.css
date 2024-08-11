@@ -41,3 +41,14 @@ html {
 .hamburger-active > span:nth-child(3) {
   @apply -rotate-45;
 }
+
+.custom-swiper div.swiper-button-next,
+.custom-swiper div.swiper-button-prev {
+  width: 20px; /* Sesuaikan ukuran lebar */
+  height: 20px; /* Sesuaikan ukuran tinggi */
+}
+
+.custom-swiper .swiper-button-next:after,
+.custom-swiper .swiper-button-prev:after {
+  font-size: 14px; /* Sesuaikan ukuran ikon */
+}
