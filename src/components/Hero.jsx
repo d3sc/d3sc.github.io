@@ -61,7 +61,7 @@ export default function Hero() {
               </mask>
               <g mask="url(#mask0)">
                 <path d={DataHero.profileSvg[1]} />
-                <image className="w-[170px]" href="/pp-bgremove.png" x={10} y={-40} />
+                <image className="w-[170px]" href="/pp-bgremove.png" x={10} y={20} />
               </g>
             </svg>
           </div>
