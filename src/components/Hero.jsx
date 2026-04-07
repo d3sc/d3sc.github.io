@@ -35,7 +35,7 @@ export default function Hero() {
             <div className="flex items-center gap-3 mt-3 mb-4">
               <div className="w-2/12 rounded-l-md h-1 bg-primary"></div>
               <p className="font-medium text-secondary text-lg lg:text-xl">
-                <Typed strings={["Web Developer", "Game Developer"]} loop typeSpeed={70} backSpeed={50} backDelay={2000} cursorChar="_" />
+                <Typed strings={["Fullstack Developer", "Bussiness Owner", "Game Developer"]} loop typeSpeed={70} backSpeed={50} backDelay={2000} cursorChar="_" />
               </p>
             </div>
             <p className="font-medium text-secondary mb-10 leading-relaxed max-sm:w-4/5">

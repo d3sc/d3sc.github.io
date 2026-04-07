@@ -280,7 +280,7 @@ export const DataContact = {
   heroTitle: "Contact",
   typeTitle: "Contact Me",
   subtitle:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab iure eum totam quisquam quas, vel iusto quibusdam voluptas similique ipsum.",
+    "If you have any questions or want to work together, please contact me via email or whatsapp.",
   contact: [
     {
       path: "M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z",
@@ -300,9 +300,9 @@ export const DataContact = {
       title: "WhatsApp",
       fragment: `<h3 className="font-semibold text-xl text-dark text tracking-wider mb-1">WhatsApp</h3>
       <span className="flex gap-1">
-      <p className="text-base font-medium">+62 814</p>
+      <p className="text-base font-medium">+62 81413265114</p>
       </span>`,
-      value: "+62 814",
+      value: "+62 81413265114",
     },
     {
       path: "M20 4H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm0 2v.511l-8 6.223-8-6.222V6h16zM4 18V9.044l7.386 5.745a.994.994 0 0 0 1.228 0L20 9.044 20.002 18H4z",
